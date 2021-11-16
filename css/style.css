@@ -7,11 +7,12 @@
 
 /* ! rimuove la scrollbar */
 html {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 body {
   font-family: "Roboto Mono", monospace;
+  position: relative;
 }
 
 img {
@@ -27,6 +28,47 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.red-bg {
+  background-color: red;
+}
+.yellow-bg {
+  background-color: #ffff00;
+}
+.green-bg {
+  background-color: #008000;
+}
+
+.yellow-txt {
+  color: #ffff00;
+}
+.green-txt {
+  color: #008000;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  top: 5%;
+  right: 0;
+  z-index: 1;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 15px;
+}
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 /* Background */
@@ -47,19 +89,22 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 1920px;
-
   width: 50%;
   height: 75%;
-  background-color: aqua;
 }
 
 /* * shoes images */
 .shoe {
   height: 75%;
-  background-color: black;
 }
-#first {
+.shoe#first {
   background-image: url(../img/01.png);
+}
+.shoe#second {
+  background-image: url(../img/02.png);
+}
+.shoe#third {
+  background-image: url(../img/03.png);
 }
 
 /* * text shoes */
@@ -67,7 +112,4 @@ img {
   font-size: 70px;
   text-align: center;
   text-transform: uppercase;
-}
-.shoe-text #first-txt {
-  color: #ffff00;
 }
