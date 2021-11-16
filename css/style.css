@@ -1,0 +1,73 @@
+/* Generics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ! rimuove la scrollbar */
+html {
+  /* overflow: hidden; */
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilities */
+.bg {
+  height: 100vh;
+  position: relative;
+}
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Background */
+.bg.red {
+  background-color: red;
+}
+.bg.green {
+  background-color: #008000;
+}
+.bg.yellow {
+  background-color: #ffff00;
+}
+
+/* Box shoes */
+.shoe-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1920px;
+
+  width: 50%;
+  height: 75%;
+  background-color: aqua;
+}
+
+/* * shoes images */
+.shoe {
+  height: 75%;
+  background-color: black;
+}
+#first {
+  background-image: url(../img/01.png);
+}
+
+/* * text shoes */
+.shoe-text h1 {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.shoe-text #first-txt {
+  color: #ffff00;
+}
