@@ -1,0 +1,133 @@
+/* Generics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ! rimuove la scrollbar */
+html {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilities */
+.bg {
+  height: 100vh;
+  position: relative;
+}
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.red-bg {
+  background-color: red;
+}
+.yellow-bg {
+  background-color: #ffff00;
+}
+.green-bg {
+  background-color: #008000;
+}
+
+.yellow-txt {
+  color: #ffff00;
+}
+.green-txt {
+  color: #008000;
+}
+
+/* Nav */
+#nav-menu {
+  position: fixed;
+  top: 5%;
+  right: 0;
+  z-index: 1;
+}
+#nav-menu li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 15px;
+}
+#nav-menu a {
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* ! Aumenta dimensioni */
+#nav-menu a:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Background */
+.bg.red {
+  background-color: red;
+}
+.bg.green {
+  background-color: #008000;
+}
+.bg.yellow {
+  background-color: #ffff00;
+}
+
+/* Box shoes */
+.shoe-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1920px;
+  width: 50%;
+  height: 75%;
+}
+
+/* * shoes images */
+.shoe {
+  height: 75%;
+}
+.shoe#first {
+  background-image: url(../../img/01.png);
+}
+.shoe#second {
+  background-image: url(../../img/02.png);
+}
+.shoe#third {
+  background-image: url(../../img/03.png);
+}
+
+/* ! Ombra per immagini */
+.shoe-container .shoe:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+/* * text shoes */
+.shoe-text h1 {
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.shoe-text h1:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(3px 3px 3px #222);
+}
