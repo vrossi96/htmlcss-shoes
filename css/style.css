@@ -48,18 +48,18 @@ img {
 }
 
 /* Nav */
-nav {
+#nav-menu {
   position: fixed;
   top: 5%;
   right: 0;
   z-index: 1;
 }
-ul li {
+#nav-menu li {
   list-style: none;
   display: inline-block;
   padding-right: 15px;
 }
-nav a {
+#nav-menu a {
   text-decoration: none;
   display: inline-block;
   height: 40px;
