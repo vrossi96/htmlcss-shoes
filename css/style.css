@@ -3,7 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+}
+
+/* ! rimuove la scrollbar */
+html {
+  overflow: hidden;
 }
 
 body {
