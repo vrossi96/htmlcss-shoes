@@ -6,11 +6,6 @@
   scroll-behavior: smooth;
 }
 
-/* ! rimuove la scrollbar */
-html {
-  overflow: hidden;
-}
-
 body {
   position: relative;
   font-family: "Rubik Mono One", sans-serif;
